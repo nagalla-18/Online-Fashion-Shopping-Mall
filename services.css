@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color:#444cfb;
+            color: #333;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color:#fff;
+        }
+
+        .header p {
+            font-size: 18px;
+            color:#fff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+        }
+
+        .service-item i {
+            font-size: 50px;
+            color: #444cfb;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .service-item:hover i {
+            color: #fe9395;
+        }
+
+        .service-item h3 {
+            font-size: 24px;
+            color: #444cfb;
+            margin-bottom: 15px;
+        }
+
+        .service-item p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .service-item h3 {
+                font-size: 20px;
+            }
+
+            .service-item p {
+                font-size: 14px;
+            }
+        }

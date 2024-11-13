@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Varshik Fashions</title>
+    <link rel="icon" href="v.png" type="image/png">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js">
+    </script>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="v.png" alt="Varshik Fashions Logo">
+        <h2>Welcome Back</h2>
+        <form onsubmit="return validateForm()">
+            <input type="email" placeholder="Email" name="email">
+            <input type="password" placeholder="Password" name="password">
+            <button type="submit">Login</button>
+            <div class="error-message" id="error-message">Please enter both email and password.</div>
+        </form>
+        <a href="forget.html">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="register.html">Don't Have an Account</a>
+    </div>
+
+</body>
+</html>

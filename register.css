@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #444cfb;
+        }
+
+        .register-container {
+            background-color: rgb(255, 252, 236);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            text-align: center;
+            width: 100%;
+            padding-top: 1.4%;
+            max-width: 400px;
+            padding-bottom: 1.5%;
+        }
+
+        .register-container img {
+            width: 100px;
+            margin-bottom: 1px;
+            border-radius: 10px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+
+        .register-container h2 {
+            color: #444cfb;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            padding-right: 1px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            color: #333;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .register-container input::placeholder {
+            color: #444cfb;
+        }
+
+        .register-container input:focus {
+            border-color: #444cfb;
+            background-color: #fff;
+            outline: none;
+        }
+
+        .register-container button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: #444cfb;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .register-container button:hover {
+            background-color: #fe9395;
+            transform: scale(1.05);
+        }
+
+        .register-container a {
+            color: #444cfb;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .register-container a:hover {
+            color: #3b42e2;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .password-strength {
+            margin-top: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .strength-bar {
+            height: 5px;
+            border-radius: 5px;
+            background-color: #ccc;
+            transition: width 0.3s ease;
+        }
+
+        .strength-bar.weak {
+            width: 25%;
+            background-color: #ff4d4d;
+        }
+
+        .strength-bar.medium {
+            width: 50%;
+            background-color: #ffa500;
+        }
+
+        .strength-bar.strong {
+            width: 100%;
+            background-color: #4caf50;
+        }
+
+        .password-match {
+            text-align: left;
+            font-size: 14px;
+            color: red;
+            display: none;
+        }
+
+        .password-match.success {
+            color: green;
+            display: block;
+        }
+
+        .password-match.error {
+            color: red;
+            display: block;
+        }
